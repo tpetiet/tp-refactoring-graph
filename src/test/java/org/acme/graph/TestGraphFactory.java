@@ -3,6 +3,8 @@ package org.acme.graph;
 import org.acme.graph.model.Edge;
 import org.acme.graph.model.Graph;
 import org.acme.graph.model.Vertex;
+import org.junit.Assert;
+import org.junit.Test;
 
 import com.vividsolutions.jts.geom.Coordinate;
 
@@ -33,5 +35,4 @@ public class TestGraphFactory {
 		return graph;
 	}
 
-	
 }

@@ -1,5 +1,6 @@
 package org.acme.graph.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -37,8 +38,8 @@ public class Vertex {
 	 */
 	private boolean visited;
 	
-	private List<Edge> inEdges;
-	private List<Edge> outEdges;
+	private List<Edge> inEdges = new ArrayList<Edge>();
+	private List<Edge> outEdges = new ArrayList<Edge>();
 
 	public Vertex() {
 

@@ -34,12 +34,10 @@ public class TestQuestion {
 	
 	@Test
 	public void testBVertex() {
-		//Vertex a = graph.findVertex("a");
-		//Vertex b = graph.findVertex("b");
-		//Vertex c = graph.findVertex("c");
-		//Vertex a2 = b.getInEdges().get(0).getSource();
-		//Vertex c2 = b.getOutEdges().get(0).getTarget();
-		//Assert.assertSame(a, b.getInEdges().get(0).getSource());
-		//Assert.assertSame(c, b.getOutEdges().get(0).getTarget());
+		Vertex a = graph.findVertex("a");
+		Vertex b = graph.findVertex("b");
+		Vertex c = graph.findVertex("c");
+		Assert.assertSame(a, b.getInEdges().get(0).getSource());
+		Assert.assertSame(c, b.getOutEdges().get(0).getTarget());
 	}
 }
